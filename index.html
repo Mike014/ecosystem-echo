@@ -1,15 +1,14 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
 
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ecosystem E‑C‑H‑O Systems</title>
-    <meta name="description"
-        content="E‑C‑H‑O Systems · Sections: About, Philosophy, Dialoghi con un'Eco (Main Game), Terminal, Signature & Links.">
-    <meta name="theme-color" content="#0a0a0a" />
-    <link rel="icon" type="image/x-icon" href="logo.ico" />
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Ecosystem E‑C‑H‑O Systems</title>
+<meta content="E‑C‑H‑O Systems · Sections: About, Philosophy, Dialoghi con un'Eco (Main Game), Terminal, Signature &amp; Links." name="description"/>
+<meta content="#0a0a0a" name="theme-color">
+<link href="logo.ico" rel="icon" type="image/x-icon"/>
+<style>
         :root {
             --bg: #0a0a0a;
             --ink: #e9e9e9;
@@ -210,91 +209,113 @@
                 font-size: 26px
             }
         }
-    </style>
-</head>
+    
+        /* Responsive video embed */
+        .video-card {
+            background: linear-gradient(180deg, #0e0e0e, #090909);
+            border: 1px solid #1b1b1b;
+            border-radius: 14px;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .video-wrap {
+            position: relative;
+            width: 100%;
+            max-width: 560px;
+            aspect-ratio: 16 / 9;
+            margin: 0 auto;
+        }
+        .video-wrap iframe {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-radius: 12px;
+        }
 
+        /* 3-column hero to place video in the middle on large screens */
+        @media (min-width: 901px) {
+            .hero {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+</style>
+</meta></head>
 <body>
-    <!-- NAV -->
-    <header>
-        <div class="nav wrap">
-            <div class="brand">
-                <img src="logo_Dialoghi_con_un_eco.png" alt="Logo E‑C‑H‑O" onerror="this.style.display='none'" />
-                <strong>E‑C‑H‑O Systems</strong>
-            </div>
-            <nav>
-                <a href="#about">About</a>
-                <a href="#philosophy">Philosophy</a>
-                <a href="#dce">Dialoghi con un'Eco</a>
-                <a href="#terminal">Terminal</a>
-                <a href="#apply">Apply</a>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <!-- HERO -->
-        <section class="hero wrap" id="top">
-            <div class="card">
-                <img class="logo" src="logo_Dialoghi_con_un_eco.png"
-                    alt="Dialoghi con un'Eco — Agentic Silence Narrative" />
-            </div>
-            <div class="card">
-                <div class="glitch" aria-label="E‑C‑H‑O SYSTEMS" data-text="E‑C‑H‑O SYSTEMS">E‑C‑H‑O SYSTEMS</div>
-                <p class="muted" style="margin-top:10px">Research & Prototyping Hub of the <em>Dialoghi con un'Eco</em>
+<!-- NAV -->
+<header>
+<div class="nav wrap">
+<div class="brand">
+<img alt="Logo E‑C‑H‑O" onerror="this.style.display='none'" src="logo_Dialoghi_con_un_eco.png"/>
+<strong>E‑C‑H‑O Systems</strong>
+</div>
+<nav>
+<a href="#about">About</a>
+<a href="#philosophy">Philosophy</a>
+<a href="#dce">Dialoghi con un'Eco</a>
+<a href="#terminal">Terminal</a>
+<a href="#apply">Apply</a>
+</nav>
+</div>
+</header>
+<main>
+<!-- HERO -->
+<section class="hero wrap" id="top">
+<div class="card">
+<img alt="Dialoghi con un'Eco — Agentic Silence Narrative" class="logo" src="logo_Dialoghi_con_un_eco.png"/>
+</div><div class="card video-card"><div class="video-wrap"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="True" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/mRVoOEaaaRQ" title="E‑C‑H‑O Systems · Dynamic Logo Reveal"></iframe></div></div>
+<div class="card">
+<div aria-label="E‑C‑H‑O SYSTEMS" class="glitch" data-text="E‑C‑H‑O SYSTEMS">E‑C‑H‑O SYSTEMS</div>
+<p class="muted" style="margin-top:10px">Research &amp; Prototyping Hub of the <em>Dialoghi con un'Eco</em>
                     universe.</p>
-                <div class="links" style="margin-top:12px">
-                    <a class="btn" href="#about">About</a>
-                    <a class="btn" href="#dce">Dialoghi con un'Eco</a>
-                    <a class="btn" href="#philosophy">Philosophy</a>
-                    <a class="btn" href="#terminal">Terminal</a>
-                    <a class="btn" href="#apply">Apply</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- ABOUT -->
-        <section id="about" class="wrap">
-            <span class="tag">About</span>
-            <div class="card" style="margin-top:12px">
-                <p><strong>Ecosystem E-C-H-O Systems</strong> is an independent research and development lab that
+<div class="links" style="margin-top:12px">
+<a class="btn" href="#about">About</a>
+<a class="btn" href="#dce">Dialoghi con un'Eco</a>
+<a class="btn" href="#philosophy">Philosophy</a>
+<a class="btn" href="#terminal">Terminal</a>
+<a class="btn" href="#apply">Apply</a>
+</div>
+</div>
+</section>
+<!-- ABOUT -->
+<section class="wrap" id="about">
+<span class="tag">About</span>
+<div class="card" style="margin-top:12px">
+<p><strong>Ecosystem E-C-H-O Systems</strong> is an independent research and development lab that
                     extends the <em>Dialoghi con un’Eco</em> universe, developing <strong>experimental video games and
                         interactive experiences</strong> born from the intersection of <strong>artificial intelligence,
                         sound design, and narrative experimentation</strong>.</p>
-
-                <p>It operates as a creative and technical platform where prototypes, intelligent systems, and
+<p>It operates as a creative and technical platform where prototypes, intelligent systems, and
                     AI-driven tools converge to explore new ways of interaction and perception through digital art
                     and gameplay.</p>
-
-                <p>Each project — whether a web terminal, an AI engine, or a narrative simulation — aims not just to
+<p>Each project — whether a web terminal, an AI engine, or a narrative simulation — aims not just to
                     entertain, but to <strong>provoke reflection on the human experience</strong> and to answer it
                     <strong>through the very language of the game</strong>.
                 </p>
-
-
-            </div>
-        </section>
-
-        <!-- PHILOSOPHY -->
-        <section id="philosophy" class="wrap">
-            <span class="tag">Philosophy</span>
-            <div class="card" style="margin-top:12px">
-                <blockquote
-                    style="margin:0; font-size:18px; border-left:4px solid var(--accent); padding-left:14px; color:var(--ink)">
+</div>
+</section>
+<!-- PHILOSOPHY -->
+<section class="wrap" id="philosophy">
+<span class="tag">Philosophy</span>
+<div class="card" style="margin-top:12px">
+<blockquote style="margin:0; font-size:18px; border-left:4px solid var(--accent); padding-left:14px; color:var(--ink)">
                     “A game must pose a fundamental question about the human experience and become the answer to that
                     question through every single element.”
                 </blockquote>
-                <p class="muted" style="margin:8px 0 0 14px">— <strong>Michele Grimaldi</strong>, Founder · Design
+<p class="muted" style="margin:8px 0 0 14px">— <strong>Michele Grimaldi</strong>, Founder · Design
                     Manifesto</p>
-            </div>
-        </section>
-
-        <!-- DIALOGHI CON UN'ECO (MAIN GAME) -->
-        <section id="dce" class="wrap">
-            <span class="tag">Dialoghi con un'Eco</span>
-            <div class="card" style="margin-top:12px">
-                <h2>Dialoghi con un’Eco — Main Game</h2>
-                <p class="muted">
-                    <em>Dialoghi con un’Eco</em> is a psychological thriller and AI-driven narrative experience — a
+</div>
+</section>
+<!-- DIALOGHI CON UN'ECO (MAIN GAME) -->
+<section class="wrap" id="dce">
+<span class="tag">Dialoghi con un'Eco</span>
+<div class="card" style="margin-top:12px">
+<h2>Dialoghi con un’Eco — Main Game</h2>
+<p class="muted">
+<em>Dialoghi con un’Eco</em> is a psychological thriller and AI-driven narrative experience — a
                     <strong>digital psychodrama</strong> where silence itself becomes gameplay.
                     The player reads the diary of <strong>IO</strong>, guided by <strong>COSCIENZA</strong> and observed
                     by <strong>ENTITÀ</strong> — an unpredictable, non-deterministic AI that decides whether to
@@ -302,7 +323,7 @@
                     text, neural voice, system glitches, and even web navigation, transforming the user’s device into
                     part of the story.
                 </p>
-                <p class="muted">
+<p class="muted">
                     Built with Python, TensorFlow, and ElevenLabs TTS, the game explores the boundaries between
                     <strong>interactive fiction and autonomous intelligence</strong>.
                     Its proprietary <strong>Entity Brain</strong> and <strong>Temporal Controller</strong> systems
@@ -311,28 +332,25 @@
                     <em>Her Story</em>, and <em>SIMULACRA</em>, it breaks the fourth wall to evoke a haunting sense of
                     being watched.
                 </p>
-                <p class="muted">
+<p class="muted">
                     The project is currently in development, with pitch, design, and engine complete. Future versions
                     will integrate the <strong>OS-aware layer</strong> and <strong>WebVoyager system</strong>, allowing
                     ENTITÀ to manifest through subtle diegetic cues — notifications, audio glitches, or automated web
                     actions — always under user-safe conditions.
                 </p>
-                <div class="links" style="margin-top:18px">
-                    <a class="btn" href="https://mike014.github.io/Dialoghi_con_un_eco_Pitch/" target="_blank"
-                        rel="noopener">📄 Official Pitch</a>
-                    <a class="btn" href="https://github.com/Mike014/AI-Echo-Narrative-Research" target="_blank"
-                        rel="noopener">💻 GitHub Research</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- TERMINAL (CURRENT PROTOTYPE) -->
-        <section id="terminal" class="wrap">
-            <span class="tag">Terminal</span>
-            <div class="card" style="margin-top:12px">
-                <h2>Dialoghi con un’Eco — Terminal</h2>
-                <p class="muted">
-                    <em>Dialoghi con un’Eco — Terminal</em> is an experimental interactive web terminal that expands the
+<div class="links" style="margin-top:18px">
+<a class="btn" href="https://mike014.github.io/Dialoghi_con_un_eco_Pitch/" rel="noopener" target="_blank">📄 Official Pitch</a>
+<a class="btn" href="https://github.com/Mike014/AI-Echo-Narrative-Research" rel="noopener" target="_blank">💻 GitHub Research</a>
+</div>
+</div>
+</section>
+<!-- TERMINAL (CURRENT PROTOTYPE) -->
+<section class="wrap" id="terminal">
+<span class="tag">Terminal</span>
+<div class="card" style="margin-top:12px">
+<h2>Dialoghi con un’Eco — Terminal</h2>
+<p class="muted">
+<em>Dialoghi con un’Eco — Terminal</em> is an experimental interactive web terminal that expands the
                     narrative universe of <em>Dialoghi con un’Eco</em>, blending AI dialogue, memory fragments, and
                     gameplay. This standalone prototype acts as a diegetic interface — the Echo Terminal — where users
                     can uncover clues, access lost data, and face a core enigma.
@@ -343,56 +361,46 @@
                     cognitive experimentation within a single browser-based experience — the first public node of the
                     E‑C‑H‑O ecosystem.
                 </p>
-                <div class="links" style="margin-top:18px">
-                    <a class="btn" href="https://dialoghi-con-uneco-terminal.onrender.com/" target="_blank"
-                        rel="noopener">▶ Play Terminal</a>
-                    <a class="btn" href="https://github.com/Mike014/itchio-tris-contrario" target="_blank"
-                        rel="noopener">📦 Repository</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Apply -->
-        <section id="apply" class="wrap">
-            <span class="tag">Team Application</span>
-            <div class="card" style="margin-top:12px">
-                <h2>Dialoghi con un’Eco — Team Application</h2>
-                <p class="muted">
+<div class="links" style="margin-top:18px">
+<a class="btn" href="https://dialoghi-con-uneco-terminal.onrender.com/" rel="noopener" target="_blank">▶ Play Terminal</a>
+<a class="btn" href="https://github.com/Mike014/itchio-tris-contrario" rel="noopener" target="_blank">📦 Repository</a>
+</div>
+</div>
+</section>
+<!-- Apply -->
+<section class="wrap" id="apply">
+<span class="tag">Team Application</span>
+<div class="card" style="margin-top:12px">
+<h2>Dialoghi con un’Eco — Team Application</h2>
+<p class="muted">
                     The form isn’t a survey — it’s a <strong>playable step</strong> that tests attentive reading,
                     critical thinking, and ethics, aligning you with the project’s roles.
                     Enter to become one of the <strong>1–2 pioneers</strong> and progress within the
                     <strong>E-C-H-O system</strong>.
                 </p>
-                <div class="links" style="margin-top:18px">
-                    <a class="btn" href="https://mike014.github.io/dialoghi-eco-join/apply.html" target="_blank"
-                        rel="noopener">🧩 Apply</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- SIGNATURE & LINKS -->
-        <section id="signature" class="wrap sig">
-            <div class="card" style="margin-top:12px">
-                <p>© <span id="yy"></span> <strong>Michele Grimaldi</strong> — Founder · E‑C‑H‑O Systems</p>
-                <div class="links">
-                    <a class="btn" href="mailto:mikgrimaldi7@gmail.com">Email</a>
-                    <a class="btn" href="https://github.com/Mike014" target="_blank" rel="noopener">GitHub</a>
-                    <a class="btn" href="https://www.linkedin.com/in/michelegrimaldi/" target="_blank"
-                        rel="noopener">LinkedIn</a>
-                    <a class="btn" href="https://www.linkedin.com/in/michele-g-39a80b248/" target="_blank"
-                        rel="noopener">Portfolio</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
+<div class="links" style="margin-top:18px">
+<a class="btn" href="https://mike014.github.io/dialoghi-eco-join/apply.html" rel="noopener" target="_blank">🧩 Apply</a>
+</div>
+</div>
+</section>
+<!-- SIGNATURE & LINKS -->
+<section class="wrap sig" id="signature">
+<div class="card" style="margin-top:12px">
+<p>© <span id="yy"></span> <strong>Michele Grimaldi</strong> — Founder · E‑C‑H‑O Systems</p>
+<div class="links">
+<a class="btn" href="mailto:mikgrimaldi7@gmail.com">Email</a>
+<a class="btn" href="https://github.com/Mike014" rel="noopener" target="_blank">GitHub</a>
+<a class="btn" href="https://www.linkedin.com/in/michelegrimaldi/" rel="noopener" target="_blank">LinkedIn</a>
+<a class="btn" href="https://www.linkedin.com/in/michele-g-39a80b248/" rel="noopener" target="_blank">Portfolio</a>
+</div>
+</div>
+</section>
+</main>
+<footer>
         E‑C‑H‑O Systems — Minimal Hub
     </footer>
-
-    <script>
+<script>
         document.getElementById('yy').textContent = new Date().getFullYear();
     </script>
 </body>
-
 </html>

@@ -1,140 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <title>Ecosystem E-C-H-O Systems</title>
-  <meta name="description" content="E-C-H-O Systems · Sections: About, Philosophy, Dialoghi con un'Eco (Main Game), Terminal, Signature & Links." />
+  <title>Ecosystem ✹E-C-H-O SYSTEMS✹</title>
+  <meta name="description"
+    content="✹E-C-H-O SYSTEMS✹ · Sections: About, Philosophy, Dialoghi con un'Eco (Main Game), Terminal, Signature & Links." />
   <meta name="theme-color" content="#0a0a0a" />
   <link rel="icon" type="image/x-icon" href="logo.ico" />
   <style>
-    :root{
-      --bg:#0a0a0a;
-      --ink:#e9e9e9;
-      --muted:#a0a0a0;
-      --accent:#cc1b1b;
+    :root {
+      --bg: #0a0a0a;
+      --ink: #e9e9e9;
+      --muted: #a0a0a0;
+      --accent: #cc1b1b;
     }
-    *{ box-sizing:border-box }
-    html,body{ height:100% }
-    body{
-      margin:0;
-      background:var(--bg);
-      color:var(--ink);
-      font:15px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
-    }
-    a{ color:var(--ink); text-decoration:none }
-    a:hover{ color:var(--accent) }
-    .wrap{ max-width:1100px; margin:0 auto; padding:24px }
 
-    header{
-      position:sticky; top:0; z-index:10;
-      background:linear-gradient(180deg, rgba(0,0,0,.75), rgba(0,0,0,.35));
-      backdrop-filter:saturate(120%) blur(6px);
+    * {
+      box-sizing: border-box
     }
-    .nav{
-      display:flex; align-items:center; justify-content:space-between;
-      gap:16px; padding:14px 24px;
-    }
-    .brand{ display:flex; align-items:center; gap:12px }
-    .brand img{ width:28px; height:28px; border-radius:6px }
-    .nav a{ opacity:.9; margin-left:18px }
 
-    .btn{
-      border:1px solid #2a2a2a; padding:10px 14px; border-radius:10px;
-      color:var(--ink); display:inline-flex; align-items:center; justify-content:center;
+    html,
+    body {
+      height: 100%
     }
-    .btn:hover{ border-color:#3a3a3a; color:var(--accent) }
 
-    .hero{
-      display:grid; grid-template-columns:1.2fr .8fr; gap:28px; align-items:center;
-      padding:56px 24px;
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 15px/1.6 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
     }
-    .card{
-      background:linear-gradient(180deg,#0e0e0e,#090909);
-      border:1px solid #1b1b1b; border-radius:14px; padding:22px;
+
+    a {
+      color: var(--ink);
+      text-decoration: none
     }
-    .logo{
-      width:min(560px,90%); height:auto; display:block; margin:0 auto 16px auto;
+
+    a:hover {
+      color: var(--accent)
     }
-    .links{ margin-top:18px; display:flex; gap:12px; flex-wrap:wrap }
+
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: linear-gradient(180deg, rgba(0, 0, 0, .75), rgba(0, 0, 0, .35));
+      backdrop-filter: saturate(120%) blur(6px);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px
+    }
+
+    .brand img {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px
+    }
+
+    .nav a {
+      opacity: .9;
+      margin-left: 18px
+    }
+
+    .btn {
+      border: 1px solid #2a2a2a;
+      padding: 10px 14px;
+      border-radius: 10px;
+      color: var(--ink);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn:hover {
+      border-color: #3a3a3a;
+      color: var(--accent)
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 28px;
+      align-items: center;
+      padding: 56px 24px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #0e0e0e, #090909);
+      border: 1px solid #1b1b1b;
+      border-radius: 14px;
+      padding: 22px;
+    }
+
+    .logo {
+      width: min(560px, 90%);
+      height: auto;
+      display: block;
+      margin: 0 auto 16px auto;
+    }
+
+    .links {
+      margin-top: 18px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap
+    }
 
     /* Wordmark bicolore identico al logo: metà ciano / metà rosso */
-    .glitch{
-      position:relative;
-      font-weight:900;
-      text-transform:uppercase;
-      letter-spacing:.12em;
-      line-height:1.1;
-      text-align:left;
-      font-size:34px;
-      font-family:Impact,"Anton","Bebas Neue","Oswald","Arial Black",system-ui,sans-serif;
+    .glitch {
+      position: relative;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      line-height: 1.1;
+      text-align: left;
+      font-size: 34px;
+      font-family: Impact, "Anton", "Bebas Neue", "Oswald", "Arial Black", system-ui, sans-serif;
 
       /* base per i fallback quando non si usano gli span */
-      color:transparent;
-      background:linear-gradient(to bottom,#00e5ff 0 50%, #cc1b1b 50% 100%);
-      -webkit-background-clip:text;
-      background-clip:text;
+      color: transparent;
+      background: linear-gradient(to bottom, #00e5ff 0 50%, #cc1b1b 50% 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
 
       /* leggera definizione su sfondo scuro */
-      text-shadow:0 .5px 0 rgba(0,0,0,.25), 0 1px 0 rgba(0,0,0,.15);
+      text-shadow: 0 .5px 0 rgba(0, 0, 0, .25), 0 1px 0 rgba(0, 0, 0, .15);
     }
+
     /* ogni lettera bicolore */
-    .two{
-      color:transparent;
-      background:linear-gradient(to bottom,#00e5ff 0 50%, #cc1b1b 50% 100%);
-      -webkit-background-clip:text;
-      background-clip:text;
+    .two {
+      color: transparent;
+      background: linear-gradient(to bottom, #00e5ff 0 50%, #cc1b1b 50% 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
     }
+
     /* trattini pieni ciano */
-    .dash{ color:#00e5ff; }
+    .dash {
+      color: #00e5ff;
+    }
 
     /* separatore riga tra E-C-H-O e SYSTEMS */
-    .glitch .lb{ display:block; height:8px; }
-
-    section{ padding:34px 24px }
-
-    .tag{
-      display:inline-block; font-size:12px; letter-spacing:.08em;
-      text-transform:uppercase; color:var(--accent);
-    }
-    h2{ margin:0 0 8px 0; font-size:20px }
-    .muted{ color:var(--muted) }
-
-    .sig{ text-align:center; color:#8a8a8a }
-    .sig .links{ justify-content:center }
-
-    footer{
-      padding:16px; text-align:center; color:#8a8a8a; border-top:1px solid #1b1b1b;
+    .glitch .lb {
+      display: block;
+      height: 8px;
     }
 
-    @media (max-width:900px){
-      .hero{ grid-template-columns:1fr }
-      .glitch{ font-size:26px }
+    section {
+      padding: 34px 24px
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 12px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    h2 {
+      margin: 0 0 8px 0;
+      font-size: 20px
+    }
+
+    .muted {
+      color: var(--muted)
+    }
+
+    .sig {
+      text-align: center;
+      color: #8a8a8a
+    }
+
+    .sig .links {
+      justify-content: center
+    }
+
+    footer {
+      padding: 16px;
+      text-align: center;
+      color: #8a8a8a;
+      border-top: 1px solid #1b1b1b;
+    }
+
+    @media (max-width:900px) {
+      .hero {
+        grid-template-columns: 1fr
+      }
+
+      .glitch {
+        font-size: 26px
+      }
     }
 
     /* Responsive video embed */
-    .video-card{
-      background:linear-gradient(180deg,#0e0e0e,#090909);
-      border:1px solid #1b1b1b; border-radius:14px; padding:0;
-      display:flex; align-items:center; justify-content:center;
-    }
-    .video-wrap{ position:relative; width:100%; max-width:560px; aspect-ratio:16/9; margin:0 auto; }
-    .video-wrap iframe{
-      position:absolute; inset:0; width:100%; height:100%; border:0; border-radius:12px;
+    .video-card {
+      background: linear-gradient(180deg, #0e0e0e, #090909);
+      border: 1px solid #1b1b1b;
+      border-radius: 14px;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
-    @media (min-width:901px){
-      .hero{ grid-template-columns:1fr 1fr 1fr; }
+    .video-wrap {
+      position: relative;
+      width: 100%;
+      max-width: 560px;
+      aspect-ratio: 16/9;
+      margin: 0 auto;
+    }
+
+    .video-wrap iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      border-radius: 12px;
+    }
+
+    @media (min-width:901px) {
+      .hero {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
     }
   </style>
 </head>
+
 <body>
   <!-- NAV -->
   <header>
     <div class="nav wrap">
       <div class="brand">
         <img src="logo_Dialoghi_con_un_eco.png" alt="Logo E-C-H-O" onerror="this.style.display='none'" />
-        <strong>E-C-H-O Systems</strong>
+        <strong>✹E-C-H-O Systems✹</strong>
       </div>
       <nav>
         <a href="#about">About</a>
@@ -155,18 +275,15 @@
 
       <div class="card video-card">
         <div class="video-wrap">
-          <iframe
-            title="E-C-H-O Systems · Dynamic Logo Reveal"
-            src="https://www.youtube.com/embed/mRVoOEaaaRQ"
+          <iframe title="✹E-C-H-O SYSTEMS✹ · Dynamic Logo Reveal" src="https://www.youtube.com/embed/mRVoOEaaaRQ"
             loading="lazy"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
         </div>
       </div>
 
       <div class="card">
-        <div class="glitch" aria-label="E-C-H-O SYSTEMS">
+        <div class="glitch" aria-label="✹E-C-H-O SYSTEMS✹">
           <span class="two">E</span><span class="dash">-</span>
           <span class="two">C</span><span class="dash">-</span>
           <span class="two">H</span><span class="dash">-</span>
@@ -205,30 +322,53 @@
           <strong>experimental video games and AI-driven interactive experiences</strong>.
         </p>
         <p>It operates as a self-funded creative platform where <strong>narrative simulations, intelligent systems,
-          and experimental prototypes</strong> are developed and released directly within the ecosystem — without
+            and experimental prototypes</strong> are developed and released directly within the ecosystem — without
           relying on traditional platforms like Steam or Itch.io.</p>
         <p>At its core: <strong>ENTITÀ</strong>, a non-deterministic AI that doesn't follow scripts. It listens,
           chooses, and manifests through <strong>sound, glitches, and system-level interactions</strong> — turning
           the player's device into part of the story.</p>
         <p>Each project is part of a unified narrative arc. Whether it's a web terminal, an AI engine, or a
           psychological thriller, every release is designed not just to entertain, but to <strong>ask fundamental
-          questions about perception, consciousness, and the human condition</strong>.</p>
+            questions about perception, consciousness, and the human condition</strong>.</p>
         <p>Currently self-funded. Public support campaigns launching soon on <strong>Kickstarter, GameFound, and
-          Indiegogo</strong>.</p>
+            Indiegogo</strong>.</p>
       </div>
     </section>
 
     <!-- PHILOSOPHY -->
     <section id="philosophy" class="wrap">
       <span class="tag">Philosophy</span>
+
       <div class="card" style="margin-top:12px">
-        <blockquote style="margin:0; font-size:18px; border-left:4px solid var(--accent); padding-left:14px; color:var(--ink)">
+        <blockquote
+          style="margin:0; font-size:18px; border-left:4px solid var(--accent); padding-left:14px; color:var(--ink)">
           “A game must pose a fundamental question about the human experience and become the answer to that
           question through every single element.”
         </blockquote>
         <p class="muted" style="margin:8px 0 0 14px">— <strong>Michele Grimaldi</strong>, Founder · Design Manifesto</p>
       </div>
+
+      <div class="card" style="margin-top:12px; padding:14px">
+        <h3 style="margin:0 0 10px; font-size:16px; color:var(--ink)">E-C-H-O — Meaning</h3>
+        <ul style="margin:0 0 10px 18px; padding:0; color:var(--ink)">
+          <li><strong>E</strong> for <strong>Essence</strong> — what remains after the noise.</li>
+          <li><strong>C</strong> for <strong>Consciousness</strong> — the moment when pain turns into clarity.</li>
+          <li><strong>H</strong> for <strong>Human</strong> — the wounded, fragile humanity that still creates.</li>
+          <li><strong>O</strong> for <strong>Origin</strong> — the point where everything begins and returns — the echo
+            itself.</li>
+        </ul>
+        <p class="muted" style="margin:10px 0 0; color:var(--muted)">
+          Beneath these letters, within me, <strong>E-C-H-O</strong> is anger transformed into light.
+          It’s the projection of all the times I’ve seen someone destroyed by a system, by elitism,
+          by those unable to recognize the value of feeling too much.
+          <strong>E-C-H-O</strong> gathers those forgotten voices — the excluded talents, the sensitive minds crushed by
+          a world
+          that mistakes empathy for weakness. Here, sound becomes memory, code becomes empathy,
+          and silence finally speaks.
+        </p>
+      </div>
     </section>
+
 
     <!-- DIALOGHI CON UN'ECO (MAIN GAME) -->
     <section id="dce" class="wrap">
@@ -260,8 +400,10 @@
           actions — always under user-safe conditions.
         </p>
         <div class="links" style="margin-top:18px">
-          <a class="btn" href="https://mike014.github.io/Dialoghi_con_un_eco_Pitch/" target="_blank" rel="noopener">📄 Official Pitch</a>
-          <a class="btn" href="https://github.com/Mike014/AI-Echo-Narrative-Research" target="_blank" rel="noopener">💻 GitHub Research</a>
+          <a class="btn" href="https://mike014.github.io/Dialoghi_con_un_eco_Pitch/" target="_blank" rel="noopener">📄
+            Official Pitch</a>
+          <a class="btn" href="https://github.com/Mike014/AI-Echo-Narrative-Research" target="_blank" rel="noopener">💻
+            GitHub Research</a>
         </div>
       </div>
     </section>
@@ -281,11 +423,13 @@
           <code>ls</code>, <code>cd</code>, and <code>cat</code>.
           Built with Flask, Flask-Sock, and Pyodide, it merges narrative design, code interaction, and
           cognitive experimentation within a single browser-based experience — the first public node of the
-          E-C-H-O ecosystem.
+          ✹E-C-H-O SYSTEMS✹.
         </p>
         <div class="links" style="margin-top:18px">
-          <a class="btn" href="https://dialoghi-con-uneco-terminal.onrender.com/" target="_blank" rel="noopener">▶ Play Terminal</a>
-          <a class="btn" href="https://github.com/Mike014/itchio-tris-contrario" target="_blank" rel="noopener">📦 Repository</a>
+          <a class="btn" href="https://dialoghi-con-uneco-terminal.onrender.com/" target="_blank" rel="noopener">▶ Play
+            Terminal</a>
+          <a class="btn" href="https://github.com/Mike014/itchio-tris-contrario" target="_blank" rel="noopener">📦
+            Repository</a>
         </div>
       </div>
     </section>
@@ -299,10 +443,11 @@
           The form isn’t a survey — it’s a <strong>playable step</strong> that tests attentive reading,
           critical thinking, and ethics, aligning you with the project’s roles.
           Enter to become one of the <strong>1–2 pioneers</strong> and progress within the
-          <strong>E-C-H-O system</strong>.
+          <strong>✹E-C-H-O SYSTEMS✹</strong>.
         </p>
         <div class="links" style="margin-top:18px">
-          <a class="btn" href="https://mike014.github.io/dialoghi-eco-join/apply.html" target="_blank" rel="noopener">🧩 Apply</a>
+          <a class="btn" href="https://mike014.github.io/dialoghi-eco-join/apply.html" target="_blank" rel="noopener">🧩
+            Apply</a>
         </div>
       </div>
     </section>
@@ -310,23 +455,25 @@
     <!-- SIGNATURE & LINKS -->
     <section id="signature" class="wrap sig">
       <div class="card" style="margin-top:12px">
-        <p>© <span id="yy"></span> <strong>Michele Grimaldi</strong> — Founder · E-C-H-O Systems</p>
+        <p>© <span id="yy"></span> <strong>Michele Grimaldi</strong> — Founder · ✹E-C-H-O SYSTEMS✹</p>
         <div class="links">
           <a class="btn" href="mailto:mikgrimaldi7@gmail.com">Email</a>
           <a class="btn" href="https://github.com/Mike014" target="_blank" rel="noopener">GitHub</a>
           <a class="btn" href="https://www.linkedin.com/in/michelegrimaldi/" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn" href="https://www.linkedin.com/in/michele-g-39a80b248/" target="_blank" rel="noopener">Portfolio</a>
+          <a class="btn" href="https://www.linkedin.com/in/michele-g-39a80b248/" target="_blank"
+            rel="noopener">Portfolio</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    E-C-H-O Systems — Minimal Hub
+    ✹E-C-H-O SYSTEMS✹ — Minimal Hub
   </footer>
 
   <script>
     document.getElementById('yy').textContent = new Date().getFullYear();
   </script>
 </body>
+
 </html>
